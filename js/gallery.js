@@ -83,3 +83,6 @@ const markup = images
   .join("");
 
 list.innerHTML = markup;
+
+// const img = document.querySelectorAll("img");
+// img.forEach((el) => el.classList.add("item"));

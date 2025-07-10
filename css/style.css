@@ -1,0 +1,16 @@
+.gallery {
+  padding: 24px, 156px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; /* Перенос елементів на новий рядок */
+  gap: 24px; /* Відступи між елементами */
+  justify-content: center;
+}
+.gallery-item {
+}
+.gallery-link {
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
