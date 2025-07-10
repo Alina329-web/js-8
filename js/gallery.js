@@ -74,7 +74,7 @@ const markup = images
     <img
       class="gallery-image"
       src=${image.preview}
-      data-source=${image.preview}
+      data-source=${image.original}
       alt=${image.description}
     />
   </a>
@@ -84,5 +84,18 @@ const markup = images
 
 list.innerHTML = markup;
 
-// const img = document.querySelectorAll("img");
-// img.forEach((el) => el.classList.add("item"));
+list.addEventListener("click", handleclick);
+
+function handleclick(event) {
+  event.preventDefault();
+  if (event.target.nodeName !== "IMG") {
+    return; // користувач клікнув між кнопками
+  }
+  const largeImageUrl = event.target.dataset.source;
+
+  const instance = basicLightbox.create(`
+    <img src=${largeImageUrl} width="1112" height="640">
+`);
+
+  instance.show();
+}
