@@ -8,7 +8,7 @@
 }
 .gallery:hover {
   gap: 20px 24px;
-  cursor: pointer;
+  cursor: url("../img/bxs_hand-down.png"), pointer;
 }
 .gallery-image {
   width: 360px;
