@@ -1,16 +1,26 @@
 .gallery {
-  padding: 24px 156px;
+  /* padding: 24px 156px; */
   list-style-type: none;
   display: flex;
   flex-wrap: wrap; /* Перенос елементів на новий рядок */
   gap: 24px; /* Відступи між елементами */
   justify-content: center;
 }
-.gallery-item {
-  flex-basis: calc((100% - 48px) / 3);
+.gallery:hover {
+  gap: 24px 20px;
+  cursor: pointer;
 }
+.gallery-item {
+  /* width: calc((100% - 48px) / 3); */
+}
+/* .gallery-item:hover {
+  cursor: pointer;
+} */
 .gallery-image {
   width: 360px;
   height: 200px;
-  cursor: pointer;
 }
+/* .gallery-image:hover {
+  cursor: pointer;
+  gap: 24px 20px;
+} */
